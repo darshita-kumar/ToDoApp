@@ -81,7 +81,7 @@ public class AddEvent extends AppCompatActivity
             }
         });
 
-        TimePickerDialog.OnTimeSetListener onTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
+        onTimeSetListener = new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                 String time = hourOfDay + ":" + minute;
